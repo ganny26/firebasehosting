@@ -1,10 +1,13 @@
 const functions = require('firebase-functions');
 const express = require('express');
 const app = express();
+const bodyParser = require("body-parser");
 
 app.get("/time", function (req, res) {
     res.status(200).send(`${Date.now()}`);
-})
+});
+
+app.use(bodyParser.json());
 
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions
