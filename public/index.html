@@ -1,80 +1,82 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Firebase hosting</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/7.23.0/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/7.23.0/firebase-auth.js"></script>
-    <script defer src="/__/firebase/7.23.0/firebase-database.js"></script>
-    <script defer src="/__/firebase/7.23.0/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/7.23.0/firebase-storage.js"></script>
-    <script defer src="/__/firebase/7.23.0/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/7.23.0/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/7.23.0/firebase-performance.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+</head>
+<body>
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="#">FirstBase</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li class="active"><a href="#" accesskey="1" title="">Homepage</a></li>
+				<li><a href="#" accesskey="2" title="">Our Clients</a></li>
+				<li><a href="#" accesskey="3" title="">About Us</a></li>
+				<li><a href="#" accesskey="4" title="">Careers</a></li>
+				<li><a href="#" accesskey="5" title="">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+<div id="banner-wrapper">
+	<div id="banner" class="container">
+		<div class="title">
+			<h2>Consectetuer adipiscing elit</h2>
+			<span class="byline">Donec pulvinar ullamcorper metus</span>
+		</div>
+		<ul class="actions">
+			<li><a href="#" class="button">Pulvinar mollis</a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div id="wrapper">
+	<div id="three-column" class="container">
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+		<div class="title">
+			<h2>Feugiat lorem ipsum dolor sed veroeros</h2>
+			<span class="byline">Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue</span>
+		</div>
+		<div class="boxA">
+			<p>Phasellus pellentesque, ante nec iaculis dapibus, eros justo auctor lectus, a lobortis lorem mauris quis nunc. Praesent pellentesque facilisis elit. Class aptent taciti sociosqu ad  torquent per conubia nostra.</p>
+			<a href="#" class="button button-alt">More Info</a>
+		</div>
+		<div class="boxB">
+			<p>Etiam neque. Vivamus consequat lorem at nisl. Nullam  wisi a sem semper eleifend. Donec mattis. Phasellus pellentesque, ante nec iaculis dapibus, eros justo auctor lectus, a lobortis lorem mauris quis nunc.</p>
+			<a href="#" class="button button-alt">More Info</a>
+		</div>
+		<div class="boxC">
+			<p> Aenean lectus lorem, imperdiet at, ultrices eget, ornare et, wisi. Pellentesque adipiscing purus. Phasellus pellentesque, ante nec iaculis dapibus, eros justo auctor lectus, a lobortis lorem mauris quis nunc.</p>
+			<a href="#" class="button button-alt">More Info</a>
+		</div>
+	</div>
+</div>
+<div id="welcome">
+	<div class="container">
+		<div class="title">
+			<h2>Fusce ultrices fringilla metus</h2>
+			<span class="byline">Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue</span>
+		</div>
+        <img src="images/pic02.jpg" alt="" class="image image-full" />
+      <p>This is <strong>FirstBase</strong>, a free, fully standards-compliant CSS template designed by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. The photos in this template are from <a href="http://fotogrph.com/"> Fotogrph</a>. This free template is released under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so you're pretty much free to do whatever you want with it (even use it commercially) provided you give us credit for it. Have fun :) </p>
+		<ul class="actions">
+			<li><a href="#" class="button">Etiam posuere</a></li>
+		</ul>
+	</div>
+</div>
+<div id="copyright" class="container">
+	<p>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+</div>
+</body>
 </html>
